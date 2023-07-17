@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "63503931670",
+    "project_id": "robotic-store-382406",
+    "storage_bucket": "robotic-store-382406.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63503931670:android:7eb9f73b23ad7097665837",
+        "android_client_info": {
+          "package_name": "com.example.notesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63503931670-l918k8r7ero7ks71koavsghs9bb5u6pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.notesapp",
+            "certificate_hash": "f4f29d2b8b3bf38cf0ec14c71549f4ddb1864ddb"
+          }
+        },
+        {
+          "client_id": "63503931670-putfggbnggqgptj7g1ovp42l47quuesd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlC0fpS3tn-Ka_aDq0Fz7vnwTzVsAYKyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63503931670-putfggbnggqgptj7g1ovp42l47quuesd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

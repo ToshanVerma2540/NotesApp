@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/let_you_in"
+        style="@style/HeadingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/let_s_get_you_in"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/mobile_number"
+        style="@style/HintTitle"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/outline_bg"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/let_you_in">
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:ccp_defaultNameCode="In"
+            app:ccp_hidePhoneCode="true"/>
+        <EditText
+            android:id="@+id/mobile_num_editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:maxLength="12"
+            android:background="@drawable/to_remove_outline" />
+
+        <TextView
+            android:id="@+id/send_otp_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/send_otp"
+            android:textColor="@color/primary_color_50"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            android:elevation="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otp"
+        style="@style/HintTitle"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="64dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/otp_et1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/to_remove_outline" />
+
+        <EditText
+            android:id="@+id/otp_et2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:enabled="false"
+            android:maxLength="1"
+            android:background="@drawable/to_remove_outline"/>
+
+        <EditText
+            android:id="@+id/otp_et3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:enabled="false"
+            android:maxLength="1"
+            android:background="@drawable/to_remove_outline" />
+
+        <EditText
+            android:id="@+id/otp_et4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:enabled="false"
+            android:imeOptions="actionDone"
+            android:background="@drawable/to_remove_outline" />
+
+        <EditText
+            android:id="@+id/otp_et5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:enabled="false"
+            android:maxLength="1"
+            android:inputType="number"
+            android:background="@drawable/to_remove_outline"
+             />
+
+        <EditText
+            android:id="@+id/otp_et6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:enabled="false"
+            android:maxLength="1"
+            android:background="@drawable/to_remove_outline"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="120dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/primary_color_50"
+        android:hint="LOGIN"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="56dp"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
